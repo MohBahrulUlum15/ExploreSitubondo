@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Explore Situbondo</string>
+    <string name="destination_name">Destination Name</string>
+    <string name="location">Kabupaten Situbondo</string>
+    <string name="open">24 jam</string>
+    <string name="ticket">Rp. 25.000</string>
+    <string name="description">Description</string>
+    <string name="my_name">Moh. Bahrul \'Ulum</string>
+    <string name="my_email">belajarkoding97@gmail.com</string>
+    <string name="my_address">Jl. Raya Mangaran 01/04, Desa Mangaran, Kecamatan Mangaran, Kabupaten Situbondo, Jawa timur.</string>
+    <string name="my_instagram">\@ulumbahrul_15</string>
+    <string name="my_linkedin">Moh. Bahrul \'Ulum</string>
+    <string name="my_github">MohBahrulUlum15</string>
+    <string name="share">Share</string>
+    <string name="list">List</string>
+    <string name="about">About</string>
+</resources>

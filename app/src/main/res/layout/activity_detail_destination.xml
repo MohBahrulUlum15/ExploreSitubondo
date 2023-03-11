@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailDestinationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/img_thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/baluran_1"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize5Percent" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/TextSpec.Name"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/destination_name"
+            android:textSize="32sp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/title_location"
+                style="@style/TextSpec.Field"
+                android:drawableStart="@drawable/ic_location_20"
+                android:text=""
+                app:layout_constraintStart_toStartOf="@id/tv_name"
+                app:layout_constraintTop_toBottomOf="@id/tv_name"
+                tools:ignore="NotSibling" />
+
+            <TextView
+                android:id="@+id/tv_location"
+                style="@style/TextSpec.Value"
+                android:layout_marginStart="16dp"
+                android:text="@string/location"
+                android:textSize="16sp"
+                android:lineSpacingMultiplier="1.25"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/title_location"
+                app:layout_constraintTop_toTopOf="@id/title_location" />
+
+            <TextView
+                android:id="@+id/title_open"
+                style="@style/TextSpec.Field"
+                android:layout_marginTop="12dp"
+                android:drawableStart="@drawable/ic_access_20"
+                android:text=""
+                app:layout_constraintStart_toStartOf="@id/title_location"
+                app:layout_constraintTop_toBottomOf="@id/title_location" />
+
+            <TextView
+                android:id="@+id/tv_open"
+                style="@style/TextSpec.Value"
+                android:layout_marginStart="16dp"
+                android:text="@string/open"
+                android:textSize="16sp"
+                android:lineSpacingMultiplier="1.25"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/title_open"
+                app:layout_constraintTop_toTopOf="@id/title_open" />
+
+            <TextView
+                android:id="@+id/title_ticket"
+                style="@style/TextSpec.Field"
+                android:layout_marginTop="12dp"
+                android:drawableStart="@drawable/ic_ticket_20"
+                android:text=""
+                app:layout_constraintStart_toStartOf="@id/title_open"
+                app:layout_constraintTop_toBottomOf="@id/title_open" />
+
+            <TextView
+                android:id="@+id/tv_ticket"
+                style="@style/TextSpec.Value"
+                android:layout_marginStart="16dp"
+                android:text="@string/ticket"
+                android:textSize="16sp"
+                android:lineSpacingMultiplier="1.25"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/title_ticket"
+                app:layout_constraintTop_toTopOf="@id/title_ticket" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/img_photo1"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="8dp"
+                android:scaleType="fitXY"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/img_photo2"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent"
+                tools:ignore="MissingConstraints"
+                tools:src="@tools:sample/avatars" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/img_photo2"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="8dp"
+                android:scaleType="fitXY"
+                app:layout_constraintStart_toEndOf="@id/img_photo1"
+                app:layout_constraintEnd_toStartOf="@id/img_photo3"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent"
+                tools:ignore="MissingConstraints"
+                tools:src="@tools:sample/avatars" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/img_photo3"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="8dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/img_photo2"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent"
+                tools:ignore="MissingConstraints"
+                tools:src="@tools:sample/avatars" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tv_description"
+            style="@style/TextContent"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            android:lineSpacingMultiplier="1.25"
+            android:text="@string/description"
+            android:textSize="16sp"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/btn_share"
+            style="@style/ButtonGeneral"
+            android:text="Share"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
